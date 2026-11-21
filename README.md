@@ -17,7 +17,7 @@ No frameworks, no build step, no API keys. Open `index.html` through any static 
 | `style.css` | All styling. Mobile-first, logical properties so Arabic RTL mirrors automatically |
 | `script.js` | The `SHOP` content object (top) + the site logic (bottom, no need to edit) |
 | `poster.html` | Printable A5 counter poster with two inline SVG QR codes (WhatsApp + website) |
-| `images/` | Monogram logo, illustrations, `og-image.png` (1200×630 share image), touch icon |
+| `images/` | Monogram logo, illustrations, `og-image.jpg` (1200×630 share image, under 100 KB), touch icon |
 
 ## Reusing the site for another shop
 
@@ -35,7 +35,7 @@ No frameworks, no build step, no API keys. Open `index.html` through any static 
    - JSON-LD structured data (`LocalBusiness`, opening hours, rating) is built from `SHOP` automatically.
 2. **Edit the `<head>` of `index.html`**: `<title>`, description, and the `og:` / `twitter:` tags.
    WhatsApp link previews don't run JavaScript, so these must be plain text.
-3. **Replace `images/og-image.png`** (1200×630), `images/logo.svg` and `images/apple-touch-icon.png` (180×180).
+3. **Replace `images/og-image.jpg`** (1200×630), `images/logo.svg` and `images/apple-touch-icon.png` (180×180).
 4. **Poster:** edit the text in `poster.html`. The QR codes are static inline SVG generated locally
    with [segno](https://pypi.org/project/segno/) (no online QR service). To regenerate one:
 
